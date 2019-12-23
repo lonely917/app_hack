@@ -1,0 +1,379 @@
+ywb@aisino MINGW64 /d/ywb/app_hack
+$ adb shell ps -ef | grep init
+    root             1     0 0 22:53:08 ?     00:09:15 init
+    root            82     2 0 22:53:08 ?     00:00:00 [init_wdt_wkq]
+    root           460     1 0 22:53:10 ?     00:00:01 init subcontext u:r:vendor_init:s0 10
+    root           461     1 0 22:53:10 ?     00:00:00 init subcontext u:r:vendor_init:s0 11
+
+    ywb@aisino MINGW64 /d/ywb/app_hack
+        $ adb shell ps -T 1
+        USER           PID   TID  PPID     VSZ    RSS WCHAN            ADDR S CMD
+        root             1     1     0   35724   2460 0                   0 S init
+
+
+$ adb shell ps -ef | grep zygote
+    root           575     1 0 22:53:12 ?     00:00:31 zygote64
+    root           576     1 0 22:53:12 ?     00:00:14 zygote
+    root           728     1 0 22:53:13 ?     00:00:19 zygote64
+    webview_zygote 1661  576 0 22:53:21 ?     00:00:02 webview_zygote
+
+    $ adb shell ps -T 575
+        USER           PID   TID  PPID     VSZ    RSS WCHAN            ADDR S CMD
+        root           575   575     1 4390448  28408 0                   0 S main
+        root           575 29731     1 4390448  28408 0                   0 S ReferenceQueueD
+        root           575 29732     1 4390448  28408 0                   0 S FinalizerDaemon
+        root           575 29733     1 4390448  28408 0                   0 S FinalizerWatchd
+        root           575 29734     1 4390448  28408 0                   0 S HeapTaskDaemon
+
+    $ adb shell ps -T 576
+        USER           PID   TID  PPID     VSZ    RSS WCHAN            ADDR S CMD
+        root           576   576     1 1701492  24196 0                   0 S main
+        root           576 29218     1 1701492  24196 0                   0 S ReferenceQueueD
+        root           576 29219     1 1701492  24196 0                   0 S FinalizerDaemon
+        root           576 29220     1 1701492  24196 0                   0 S FinalizerWatchd
+        root           576 29221     1 1701492  24196 0                   0 S HeapTaskDaemon
+
+    $ adb shell ps -T 728
+        USER           PID   TID  PPID     VSZ    RSS WCHAN            ADDR S CMD
+        root           728   728     1 3305760   6396 0                   0 S main
+        root           728  1161     1 3305760   6396 0                   0 S main
+        root           728  1162     1 3305760   6396 0                   0 S BackupTracing
+        root           728  1163     1 3305760   6396 0                   0 S reference-colle
+
+
+
+$ adb shell ps -ef | grep manager
+    system         509     1 0 22:53:12 ?     00:13:20 servicemanager
+    system         510     1 0 22:53:12 ?     00:00:09 hwservicemanager
+    system         511     1 0 22:53:12 ?     00:00:00 vndservicemanager /dev/vndbinder
+    root           776     1 0 22:53:13 ?     00:00:01 hinetmanager
+    system        1963   575 0 22:53:22 ?     00:11:11 com.huawei.systemmanager:service
+
+
+    $ adb shell ps -T 509
+        USER           PID   TID  PPID     VSZ    RSS WCHAN            ADDR S CMD
+        system         509   509     1   12252   1776 0                   0 S servicemanager
+
+
+    $ adb shell ps -T 510
+        USER           PID   TID  PPID     VSZ    RSS WCHAN            ADDR S CMD
+        system         510   510     1 2126996   2676 0                   0 S hwservicemanage
+
+
+
+$ adb shell ps -ef | grep system_server
+    system        1160   728 6 22:53:15 ?     05:08:14 system_server
+
+
+$ adb shell ps -ef | grep launcher
+    u0_a69        1938   575 0 22:53:22 ?     00:08:30 com.huawei.android.launcher
+
+
+$ adb shell ps -ef | grep qq
+    u0_a154      21124   576 0 09:29:57 ?     00:00:12 com.tencent.mobileqq:MSF
+    u0_a154      21141   576 8 09:29:58 ?     00:03:41 com.tencent.mobileqq
+    u0_a154      27879   576 2 10:15:18 ?     00:00:01 com.tencent.mobileqq:peak
+
+
+$ adb shell ps -ef | grep tencent
+    u0_a131       2426   576 0 07:22:58 ?     00:00:21 com.tencent.mm:exdevice
+    u0_a131       7479   576 0 08:27:09 ?     00:00:05 com.tencent.mm:support
+    u0_a154      21124   576 0 09:29:57 ?     00:00:12 com.tencent.mobileqq:MSF
+    u0_a154      21141   576 8 09:29:58 ?     00:03:42 com.tencent.mobileqq
+    u0_a131      27448   576 0 01:58:35 ?     00:01:00 com.tencent.mm:push
+    u0_a131      27546   576 2 01:58:38 ?     00:10:20 com.tencent.mm
+
+
+system_server进程详情
+$ adb shell ps -T 1160
+    USER           PID   TID  PPID     VSZ    RSS WCHAN            ADDR S CMD
+    system        1160  1160   728 4849564 158400 0                   0 S system_server
+    system        1160  1164   728 4849564 158400 0                   0 S MapleCollie
+    system        1160  1165   728 4849564 158400 0                   0 S Signal Catcher
+    system        1160  1166   728 4849564 158400 0                   0 S system_server
+    system        1160  1167   728 4849564 158400 0                   0 S system_server
+    system        1160  1168   728 4849564 158400 0                   0 S system_server
+    system        1160  1169   728 4849564 158400 0                   0 S system_server
+    system        1160  1170   728 4849564 158400 0                   0 S system_server
+    system        1160  1171   728 4849564 158400 0                   0 S system_server
+    system        1160  1172   728 4849564 158400 0                   0 S system_server
+    system        1160  1173   728 4849564 158400 0                   0 S BackupTracing
+    system        1160  1174   728 4849564 158400 0                   0 S reference-colle
+    system        1160  1182   728 4849564 158400 0                   0 S Binder:1160_1
+    system        1160  1183   728 4849564 158400 0                   0 S Binder:1160_2
+    system        1160  1237   728 4849564 158400 0                   0 S writingThread
+    system        1160  1238   728 4849564 158400 0                   0 S android.bg
+    system        1160  1239   728 4849564 158400 0                   0 S HwActivityManag
+    system        1160  1241   728 4849564 158400 0                   0 S ActivityManager
+    system        1160  1242   728 4849564 158400 0                   0 S android.ui
+    system        1160  1243   728 4849564 158400 0                   0 S monitor thread
+    system        1160  1244   728 4849564 158400 0                   0 S ActivityManager
+    system        1160  1245   728 4849564 158400 0                   0 S ActivityManager
+    system        1160  1246   728 4849564 158400 0                   0 S ThirdAppHandler
+    system        1160  1247   728 4849564 158400 0                   0 S keyAppHanderThr
+    system        1160  1248   728 4849564 158400 0                   0 S batterystats-wo
+    system        1160  1249   728 4849564 158400 0                   0 S FileObserver
+    system        1160  1250   728 4849564 158400 0                   0 S android.fg
+    system        1160  1251   728 4849564 158400 0                   0 S android.io
+    system        1160  1252   728 4849564 158400 0                   0 S android.display
+    system        1160  1253   728 4849564 158400 0                   0 S HwGameAssistant
+    system        1160  1254   728 4849564 158400 0                   0 S CpuTracker
+    system        1160  1255   728 4849564 158400 0                   0 S PowerManagerSer
+    system        1160  1256   728 4849564 158400 0                   0 S system_server
+    system        1160  1257   728 4849564 158400 0                   0 S system_server
+    system        1160  1258   728 4849564 158400 0                   0 S system_server
+    system        1160  1259   728 4849564 158400 0                   0 S system_server
+    system        1160  1260   728 4849564 158400 0                   0 S system_server
+    system        1160  1261   728 4849564 158400 0                   0 S system_server
+    system        1160  1262   728 4849564 158400 0                   0 S system_server
+    system        1160  1263   728 4849564 158400 0                   0 S system_server
+    system        1160  1264   728 4849564 158400 0                   0 S DisplayEffectMo
+    system        1160  1265   728 4849564 158400 0                   0 S BackLightMonito
+    system        1160  1266   728 4849564 158400 0                   0 S HwBinder:1160_1
+    system        1160  1267   728 4849564 158400 0                   0 S BatteryStats_wa
+    system        1160  1268   728 4849564 158400 0                   0 S PMSCommonThread
+    system        1160  1269   728 4849564 158400 0                   0 S PackageManager
+    system        1160  1270   728 4849564 158400 0                   0 S PackageManager
+    system        1160  1460   728 4849564 158400 0                   0 S PackageInstalle
+    system        1160  1461   728 4849564 158400 0                   0 S HwPackageManage
+    system        1160  1462   728 4849564 158400 0                   0 S android.anim
+    system        1160  1463   728 4849564 158400 0                   0 S android.anim.lf
+    system        1160  1466   728 4849564 158400 0                   0 S SensorEventAckR
+    system        1160  1467   728 4849564 158400 0                   0 S SensorService
+    system        1160  1468   728 4849564 158400 0                   0 S Binder:1160_3
+    system        1160  1469   728 4849564 158400 0                   0 S HwBatteryServic
+    system        1160  1470   728 4849564 158400 0                   0 S UEventObserver
+    system        1160  1477   728 4849564 158400 0                   0 S HealthServiceRe
+    system        1160  1478   728 4849564 158400 0                   0 S AccountManagerS
+    system        1160  1479   728 4849564 158400 0                   0 S SettingsProvide
+    system        1160  1480   728 4849564 158400 0                   0 S SimHandlerThrea
+    system        1160  1483   728 4849564 158400 0                   0 S HeartBeatHandle
+    system        1160  1484   728 4849564 158400 0                   0 S AlarmManager
+    system        1160  1486   728 4849564 158400 0                   0 S MessageHandle
+    system        1160  1487   728 4849564 158400 0                   0 S sManagerService
+    system        1160  1488   728 4849564 158400 0                   0 S hw_finger_unloc
+    system        1160  1489   728 4849564 158400 0                   0 S hw_ops_handler_
+    system        1160  1492   728 4849564 158400 0                   0 S HWExtMotionServ
+    system        1160  1494   728 4849564 158400 0                   0 S GestureNavManag
+    system        1160  1495   728 4849564 158400 0                   0 S InputDispatcher
+    system        1160  1496   728 4849564 158400 0                   0 S InputReader
+    system        1160  1498   728 4849564 158400 0                   0 S HwBinder:1160_2
+    system        1160  1499   728 4849564 158400 0                   0 S HwBinder:1160_3
+    system        1160  1501   728 4849564 158400 0                   0 S NetworkWatchlis
+    system        1160  1502   728 4849564 158400 0                   0 S ZRHungService
+    system        1160  1506   728 4849564 158400 0                   0 S StorageManagerS
+    system        1160  1512   728 4849564 158400 0                   0 S DeviceStorageMa
+    system        1160  1513   728 4849564 158400 0                   0 S NetdConnector
+    system        1160  1515   728 4849564 158400 0                   0 S etworkStats.uid
+    system        1160  1516   728 4849564 158400 0                   0 S NetworkStats
+    system        1160  1517   728 4849564 158400 0                   0 S NetworkPolicy
+    system        1160  1518   728 4849564 158400 0                   0 S tworkPolicy.uid
+    system        1160  1519   728 4849564 158400 0                   0 S WifiService
+    system        1160  1520   728 4849564 158400 0                   0 S WifiStateMachin
+    system        1160  1521   728 4849564 158400 0                   0 S HwNcChrServiceI
+    system        1160  1523   728 4849564 158400 0                   0 S WifiScanningSer
+    system        1160  1524   728 4849564 158400 0                   0 S WifiP2pService
+    system        1160  1525   728 4849564 158400 0                   0 S WifiP2pService
+    system        1160  1526   728 4849564 158400 0                   0 S WifiRepeater
+    system        1160  1527   728 4849564 158400 0                   0 S ConnectivitySer
+    system        1160  1529   728 4849564 158400 0                   0 S roid.pacmanager
+    system        1160  1530   728 4849564 158400 0                   0 S DnsHiCureEngine
+    system        1160  1531   728 4849564 158400 0                   0 S NsdService
+    system        1160  1532   728 4849564 158400 0                   0 S mDnsConnector
+    system        1160  1533   728 4849564 158400 0                   0 S notification-sq
+    system        1160  1534   728 4849564 158400 0                   0 S notification ma
+    system        1160  1535   728 4849564 158400 0                   0 S ranker
+    system        1160  1536   728 4849564 158400 0                   0 S onProviders.ECP
+    system        1160  1537   728 4849564 158400 0                   0 S DeviceStorageMo
+    system        1160  1538   728 4849564 158400 0                   0 S UIEventListener
+    system        1160  1539   728 4849564 158400 0                   0 S AudioService
+    system        1160  1540   728 4849564 158400 0                   0 S Thread-8
+    system        1160  1541   728 4849564 158400 0                   0 S ent.InfoHandler
+    system        1160  1542   728 4849564 158400 0                   0 S nt.EventHandler
+    system        1160  1544   728 4849564 158400 0                   0 S HwUsbDeviceMana
+    system        1160  1546   728 4849564 158400 0                   0 S ConnectivityThr
+    system        1160  1547   728 4849564 158400 0                   0 S HwSdLockService
+    system        1160  1548   728 4849564 158400 0                   0 S HwSmartDisplayS
+    system        1160  1549   728 4849564 158400 0                   0 S HwSmartDisplayS
+    system        1160  1550   728 4849564 158400 0                   0 S CallbackHandler
+    system        1160  1551   728 4849564 158400 0                   0 S HwApsManagerSer
+    system        1160  1552   728 4849564 158400 0                   0 S HwDualSensorEve
+    system        1160  1553   728 4849564 158400 0                   0 S DE J DisplayEng
+    system        1160  1557   728 4849564 158400 0                   0 S GraphicsStats-d
+    system        1160  1558   728 4849564 158400 0                   0 S fingerprintServ
+    system        1160  1559   728 4849564 158400 0                   0 S SliceManagerSer
+    system        1160  1560   728 4849564 158400 0                   0 S CameraService_p
+    system        1160  1561   728 4849564 158400 0                   0 S iaware.clean
+    system        1160  1562   728 4849564 158400 0                   0 S HwBastetHandler
+    system        1160  1567   728 4849564 158400 0                   0 S uevent handler
+    system        1160  1568   728 4849564 158400 0                   0 S AppLayerStpProx
+    system        1160  1569   728 4849564 158400 0                   0 S InSEServicePlug
+    system        1160  1570   728 4849564 158400 0                   0 S HwEidPlugin
+    system        1160  1575   728 4849564 158400 0                   0 S SyncHandler-0
+    system        1160  1577   728 4849564 158400 0                   0 S HwSelfCureEngin
+    system        1160  1578   728 4849564 158400 0                   0 S HwWifiConnectiv
+    system        1160  1579   728 4849564 158400 0                   0 S EthernetService
+    system        1160  1580   728 4849564 158400 0                   0 S initQoEAdapter
+    system        1160  1581   728 4849564 158400 0                   0 S hw_qoe_contenta
+    system        1160  1582   728 4849564 158400 0                   0 S HwArbitrationSt
+    system        1160  1583   728 4849564 158400 0                   0 S HwHiRadio4gSwit
+    system        1160  1584   728 4849564 158400 0                   0 S HwMpLinkService
+    system        1160  1585   728 4849564 158400 0                   0 S HwAPPQoEStateMa
+    system        1160  1587   728 4849564 158400 0                   0 S TaskSnapshotPer
+    system        1160  1588   728 4849564 158400 0                   0 S HwWMStateMachin
+    system        1160  1589   728 4849564 158400 0                   0 S HwWaveMappingMa
+    system        1160  1590   728 4849564 158400 0                   0 S HwHiStreamManag
+    system        1160  1591   728 4849564 158400 0                   0 S HwNormalizedAut
+    system        1160  1592   728 4849564 158400 0                   0 S HwHiStreamQoeMo
+    system        1160  1593   728 4849564 158400 0                   0 S EyeProtectionCo
+    system        1160  1595   728 4849564 158400 0                   0 S HwHiNetworkMana
+    system        1160  1596   728 4849564 158400 0                   0 S PhotonicModulat
+    system        1160  1597   728 4849564 158400 0                   0 S WifiProStateMac
+    system        1160  1598   728 4849564 158400 0                   0 S PgmsEventsHandl
+    system        1160  1599   728 4849564 158400 0                   0 S HwIntelligenceS
+    system        1160  1600   728 4849564 158400 0                   0 S HuaweiWifiWatch
+    system        1160  1601   728 4849564 158400 0                   0 S WifiProHistoryR
+    system        1160  1602   728 4849564 158400 0                   0 S HwDualBandState
+    system        1160  1604   728 4849564 158400 0                   0 S WifiScanGenie_h
+    system        1160  1607   728 4849564 158400 0                   0 S LazyTaskWriterT
+    system        1160  1608   728 4849564 158400 0                   0 S PermRecordHandl
+    system        1160  1609   728 4849564 158400 0                   0 S SyncHandler-1
+    system        1160  1610   728 4849564 158400 0                   0 S SyncManager
+    system        1160  1611   728 4849564 158400 0                   0 S Thread-11
+    system        1160  1612   728 4849564 158400 0                   0 S sManagerService
+    system        1160  1629   728 4849564 158400 0                   0 S Binder:1160_4
+    system        1160  1631   728 4849564 158400 0                   0 S UsbService host
+    system        1160  1632   728 4849564 158400 0                   0 S NativeCrashList
+    system        1160  1645   728 4849564 158400 0                   0 S SoundPool
+    system        1160  1646   728 4849564 158400 0                   0 S SoundPoolThread
+    system        1160  1726   728 4849564 158400 0                   0 S Binder:1160_5
+    system        1160  1739   728 4849564 158400 0                   0 S NetworkStatsObs
+    system        1160  1751   728 4849564 158400 0                   0 S HwBinder:1160_4
+    system        1160  1753   728 4849564 158400 0                   0 S Binder:1160_6
+    system        1160  1780   728 4849564 158400 0                   0 S watchdog
+    system        1160  1781   728 4849564 158400 0                   0 S Thread-12
+    system        1160  1786   728 4849564 158400 0                   0 S EmergencyAfford
+    system        1160  1787   728 4849564 158400 0                   0 S HwBinder:1160_5
+    system        1160  1791   728 4849564 158400 0                   0 S LocationThread
+    system        1160  1793   728 4849564 158400 0                   0 S LocationManager
+    system        1160  1795   728 4849564 158400 0                   0 S HwGpsLogService
+    system        1160  1796   728 4849564 158400 0                   0 S NetworkTimeUpda
+    system        1160  1797   728 4849564 158400 0                   0 S HwTripleFingers
+    system        1160  1798   728 4849564 158400 0                   0 S InputManager
+    system        1160  1799   728 4849564 158400 0                   0 S CallbackHandler
+    system        1160  1800   728 4849564 158400 0                   0 S GpsXtraReceiver
+    system        1160  1801   728 4849564 158400 0                   0 S MultiTaskManage
+    system        1160  1802   728 4849564 158400 0                   0 S AwareAppStartup
+    system        1160  1806   728 4849564 158400 0                   0 S GeoFenceThread
+    system        1160  1808   728 4849564 158400 0                   0 S HwPCManagerServ
+    system        1160  1809   728 4849564 158400 0                   0 S HwPCVAssistCmdE
+    system        1160  1853   728 4849564 158400 0                   0 S HwFreeFormManag
+    system        1160  1857   728 4849564 158400 0                   0 S HwSnsVideoManag
+    system        1160  1926   728 4849564 158400 0                   0 S Binder:1160_7
+    system        1160  1927   728 4849564 158400 0                   0 S Binder:1160_8
+    system        1160  1928   728 4849564 158400 0                   0 S Binder:1160_9
+    system        1160  1929   728 4849564 158400 0                   0 S Binder:1160_A
+    system        1160  1930   728 4849564 158400 0                   0 S Binder:1160_B
+    system        1160  2075   728 4849564 158400 0                   0 S BluetoothRouteM
+    system        1160  2080   728 4849564 158400 0                   0 S uteStateMachine
+    system        1160  2081   728 4849564 158400 0                   0 S AudioPortEventH
+    system        1160  2083   728 4849564 158400 0                   0 S CallAudioModeSt
+    system        1160  2089   728 4849564 158400 0                   0 S SoundPool
+    system        1160  2090   728 4849564 158400 0                   0 S SoundPoolThread
+    system        1160  2206   728 4849564 158400 0                   0 S Binder:1160_C
+    system        1160  2297   728 4849564 158400 0                   0 S Binder:1160_D
+    system        1160  2298   728 4849564 158400 0                   0 S Binder:1160_E
+    system        1160  2300   728 4849564 158400 0                   0 S Binder:1160_F
+    system        1160  2301   728 4849564 158400 0                   0 S Binder:1160_10
+    system        1160  2302   728 4849564 158400 0                   0 S Binder:1160_11
+    system        1160  2364   728 4849564 158400 0                   0 S queued-work-loo
+    system        1160  2367   728 4849564 158400 0                   0 S android.fg
+    system        1160  2459   728 4849564 158400 0                   0 S HwAddViewManage
+    system        1160  2723   728 4849564 158400 0                   0 S Binder:1160_12
+    system        1160  2786   728 4849564 158400 0                   0 S HwDeviceUsageCo
+    system        1160  2788   728 4849564 158400 0                   0 S Thread-22
+    system        1160  2791   728 4849564 158400 0                   0 S LifeCycleStateM
+    system        1160  2797   728 4849564 158400 0                   0 S Thread-24
+    system        1160  2825   728 4849564 158400 0                   0 S MessageHandle
+    system        1160  2845   728 4849564 158400 0                   0 S UsbDebuggingMan
+    system        1160  3028   728 4849564 158400 0                   0 S mReceviveKernel
+    system        1160  3029   728 4849564 158400 0                   0 S taLoadDetectorT
+    system        1160  3135   728 4849564 158400 0                   0 S wave_mapping_tr
+    system        1160  3136   728 4849564 158400 0                   0 S Binder:1160_13
+    system        1160  3146   728 4849564 158400 0                   0 S WifiDataProvide
+    system        1160  3272   728 4849564 158400 0                   0 S Binder:1160_14
+    system        1160  3274   728 4849564 158400 0                   0 S Binder:1160_15
+    system        1160  3275   728 4849564 158400 0                   0 S Binder:1160_16
+    system        1160  3291   728 4849564 158400 0                   0 S Binder:1160_17
+    system        1160  3295   728 4849564 158400 0                   0 S Binder:1160_18
+    system        1160  3302   728 4849564 158400 0                   0 S Binder:1160_19
+    system        1160  3303   728 4849564 158400 0                   0 S Binder:1160_1A
+    system        1160  3323   728 4849564 158400 0                   0 S Binder:1160_1B
+    system        1160  3363   728 4849564 158400 0                   0 S backup
+    system        1160  3378   728 4849564 158400 0                   0 S pool-4-thread-1
+    system        1160  3615   728 4849564 158400 0                   0 S RenderThread
+    system        1160  3618   728 4849564 158400 0                   0 S mali-mem-purge
+    system        1160  3619   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3621   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3622   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3623   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3624   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3625   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3626   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3627   728 4849564 158400 0                   0 S mali-utility-wo
+    system        1160  3628   728 4849564 158400 0                   0 S mali-cmar-backe
+    system        1160  3629   728 4849564 158400 0                   0 S mali-hist-dump
+    system        1160  4627   728 4849564 158400 0                   0 S PhotonicModulat
+    system        1160  5098   728 4849564 158400 0                   0 S pool-5-thread-1
+    system        1160  5100   728 4849564 158400 0                   0 S HwBastetService
+    system        1160  5101   728 4849564 158400 0                   0 S CallbackHandler
+    system        1160  5104   728 4849564 158400 0                   0 S HwAPPQoEActivit
+    system        1160  5110   728 4849564 158400 0                   0 S MobileQosDetect
+    system        1160  5128   728 4849564 158400 0                   0 S AsyncQueryWorke
+    system        1160  5652   728 4849564 158400 0                   0 S SyncHandler-2
+    system        1160  5736   728 4849564 158400 0                   0 S mss_handler_thr
+    system        1160  5831   728 4849564 158400 0                   0 S SyncHandler-3
+    system        1160  5848   728 4849564 158400 0                   0 S SyncHandler-4
+    system        1160  5858   728 4849564 158400 0                   0 S SyncHandler-5
+    system        1160  5888   728 4849564 158400 0                   0 S Okio Watchdog
+    system        1160  7910   728 4849564 158400 0                   0 S Binder:1160_1C
+    system        1160  8425   728 4849564 158400 0                   0 S Binder:1160_1D
+    system        1160  9150   728 4849564 158400 0                   0 S Binder:1160_1E
+    system        1160  9404   728 4849564 158400 0                   0 S Binder:1160_1F
+    system        1160  9679   728 4849564 158400 0                   0 S Binder:1160_16
+    system        1160  9680   728 4849564 158400 0                   0 S Binder:1160_20
+    system        1160 22100   728 4849564 158400 0                   0 S hidata_brain_di
+    system        1160 26544   728 4849564 158400 0                   0 S hidl_ssvc_poll
+    system        1160 28804   728 4849564 158400 0                   0 S hwuiTask1
+    system        1160 31179   728 4849564 158400 0                   0 S SyncHandler-6
+    system        1160 31180   728 4849564 158400 0                   0 S SyncHandler-7
+    system        1160 29024   728 4849564 158400 0                   0 S pool-8-thread-1
+    system        1160 29109   728 4849564 158400 0                   0 S CallExceptionHa
+    system        1160 29162   728 4849564 158400 0                   0 S tonegenerator-d
+    system        1160 29169   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160 22386   728 4849564 158400 0                   0 S pool-8-thread-2
+    system        1160 22491   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160 23020   728 4849564 158400 0                   0 S pool-8-thread-3
+    system        1160 23126   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160 23907   728 4849564 158400 0                   0 S pool-8-thread-4
+    system        1160 24034   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160 24357   728 4849564 158400 0                   0 S pool-8-thread-5
+    system        1160 24414   728 4849564 158400 0                   0 S AudioTrack
+    system        1160 24485   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160  4778   728 4849564 158400 0                   0 S pool-8-thread-6
+    system        1160  5020   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160  5461   728 4849564 158400 0                   0 S pool-8-thread-7
+    system        1160  5586   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160  6976   728 4849564 158400 0                   0 S pool-8-thread-8
+    system        1160  7103   728 4849564 158400 0                   0 S pool-10-thread-
+    system        1160  9754   728 4849564 158400 0                   0 S IpClient.wlan0
+    system        1160  9946   728 4849564 158400 0                   0 S NetworkMonitorN
+    system        1160  9948   728 4849564 158400 0                   0 S Thread-12700
+    system        1160  9950   728 4849564 158400 0                   0 S Thread-12701
+    system        1160 29088   728 4849564 158400 0                   0 S OkHttp Connecti
+    system        1160 29600   728 4849564 158400 0                   0 S AsyncTask #1534
+
+
+
+1. adb logcat ActivityManager:I *:s
+2. adb logcat *:I | grep ActivityManager

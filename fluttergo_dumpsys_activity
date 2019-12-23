@@ -1,0 +1,57 @@
+TASK com.ali.fluttergo id=2300 userId=0
+  ACTIVITY com.ali.fluttergo/.MainActivity b35eea5 pid=4347
+    Local Activity 1937709 State:
+      mResumed=true mStopped=false mFinished=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 460mcc2mnc [zh_CN_#Hans,en_GB,fr_FR] ldltr sw360dp w360dp h656dp 480dpi nrml long hdr port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2040) mAppBounds=Rect(0, 0 - 1080, 2040) mWindowingMode=fullscreen mActivityType=standard} nonFullScreen=0 suim:1 s.16}
+      mLoadersStarted=true
+      FragmentManager misc state:
+        mHost=android.app.Activity$HostCallbacks@a40d1cb
+        mContainer=android.app.Activity$HostCallbacks@a40d1cb
+        mCurState=5 mStateSaved=false mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false      mIsAmbientMode=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mLastFrameTime=123100760 (2055 ms ago)
+    View Hierarchy:
+      DecorView@b875da8[MainActivity]
+        android.widget.LinearLayout{f1c40c1 V.E...... ........ 0,0-1080,2040}
+          android.view.ViewStub{1089066 G.E...... ......I. 0,0-0,0 #102019e android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{188bfa7 V.E...... ........ 0,0-1080,2040 #1020002 android:id/content}
+            io.flutter.view.FlutterView{3c8ac54 VFE...... .F...... 0,0-1080,2040}
+        android.view.View{deb27fd V.ED..... ........ 0,2040-1080,2160 #1020030 android:id/navigationBarBackground}
+        android.view.View{dfd4cf2 V.ED..... ........ 0,0-1080,72 #102002f android:id/statusBarBackground}
+    Looper (main, tid 1) {d9b3fe6}
+      (Total messages: 0, polling=false, quitting=false)
+    Autofill Compat Mode: false
+    AutofillManager:
+      sessionId: -2147483648
+      state: UNKNOWN
+      context: com.ali.fluttergo.MainActivity@1937709
+      client: com.ali.fluttergo.MainActivity@1937709
+      enabled: true
+      hasService: true
+      hasCallback: true
+      onInvisibleCalled false
+      last autofilled data: null
+      tracked views: null
+      fillable ids: null
+      entered ids: null
+      save trigger id: null
+      save on finish(): false
+      compat mode enabled: false
+      debug: false verbose: false
+    ResourcesManager:
+      total apks: 2
+      resources: 3
+      resource impls: 3
+      callerPid=4347, isSystemServer=false

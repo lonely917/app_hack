@@ -1,0 +1,404 @@
+TASK com.tencent.mobileqq id=2296 userId=0
+  ACTIVITY com.tencent.mobileqq/.activity.SplashActivity c88b41 pid=24735
+    Local FragmentActivity acb2ff5 State:
+      mCreated=truemResumed=true mStopped=false mReallyStopped=false
+      mLoadersStarted=true
+    Active Fragments in bcf1cb5:
+      #0: MainFragment{c95f12f #0 id=0x1020002 com.tencent.mobileqq.activity.MainFragment}
+        mFragmentId=#1020002 mContainerId=#1020002 mTag=com.tencent.mobileqq.activity.MainFragment
+        mState=5 mIndex=0 mWho=android:fragment:0 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=false mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{bcf1cb5 in SplashActivity{acb2ff5}}
+        mActivity=com.tencent.mobileqq.activity.SplashActivity@acb2ff5
+        mArguments=Bundle[{should_restore_from_kill=false}]
+        mContainer=android.widget.FrameLayout{aec8f4a V.E...... ........ 0,0-1080,2040 #1020002 android:id/content}
+        mView=android.support.v4.app.NoSaveStateFrameLayout{79dbebb V.E...... ........ 0,0-1080,2040}
+        mInnerView=android.support.v4.app.NoSaveStateFrameLayout{79dbebb V.E...... ........ 0,0-1080,2040}
+      #1: ChatFragment{ace3676 #1 id=0x1020002 com.tencent.mobileqq.activity.ChatFragment}
+        mFragmentId=#1020002 mContainerId=#1020002 mTag=com.tencent.mobileqq.activity.ChatFragment
+        mState=5 mIndex=1 mWho=android:fragment:1 mBackStackNesting=0
+        mAdded=true mRemoving=false mResumed=true mFromLayout=false mInLayout=false
+        mHidden=true mDetached=false mMenuVisible=true mHasMenu=false
+        mRetainInstance=false mRetaining=false mUserVisibleHint=true
+        mFragmentManager=FragmentManager{bcf1cb5 in SplashActivity{acb2ff5}}
+        mActivity=com.tencent.mobileqq.activity.SplashActivity@acb2ff5
+        mArguments=Bundle[{should_restore_from_kill=false}]
+        mContainer=android.widget.FrameLayout{aec8f4a V.E...... ........ 0,0-1080,2040 #1020002 android:id/content}
+        mView=android.support.v4.app.NoSaveStateFrameLayout{de95fd8 G.E...... ......I. 0,0-0,0}
+        mInnerView=android.support.v4.app.NoSaveStateFrameLayout{de95fd8 G.E...... ......I. 0,0-0,0}
+    Added Fragments:
+      #0: MainFragment{c95f12f #0 id=0x1020002 com.tencent.mobileqq.activity.MainFragment}
+      #1: ChatFragment{ace3676 #1 id=0x1020002 com.tencent.mobileqq.activity.ChatFragment}
+    FragmentManager misc state:
+      mActivity=com.tencent.mobileqq.activity.SplashActivity@acb2ff5
+      mContainer=android.support.v4.app.FragmentActivity$2@a1cf31
+      mCurState=5 mStateSaved=false mDestroyed=false
+    View Hierarchy:
+      com.android.internal.policy.DecorView{2ec5616 V.ED.... ... 0,0-1080,2040}
+        android.widget.LinearLayout{bdf8b97 V.E..... ... 0,0-1080,2040}
+          android.view.ViewStub{880a184 G.E..... ... 0,0-0,0 #102019e android:id/action_mode_bar_stub}
+          android.widget.FrameLayout{aec8f4a V.E..... ... 0,0-1080,2040 #1020002 android:id/content}
+            android.support.v4.app.NoSaveStateFrameLayout{79dbebb V.E..... ... 0,0-1080,2040}
+              com.tencent.mobileqq.widget.QQTabHost{e869868 VFED..C. ... 0,0-1080,2040 #1020012 android:id/tabhost}
+                com.tencent.mobileqq.activity.recent.DrawerFrame{132d6d V.E..... ... 0,0-1080,2040}
+                  android.widget.RelativeLayout{7c850f6 G.E..... ... 0,0-0,0}
+                    com.tencent.mobileqq.widget.RandomCoverView{f4fbda2 V.E..... ... 0,0-0,0 #7f0a2620 app:id/name}
+                      com.tencent.image.URLImageView{e074a33 V.ED.... ... 0,0-0,0}
+                      android.view.View{82851f0 V.ED.... ... 0,0-0,0}
+                    android.widget.ImageView{1c23369 V.ED.... ... 0,0-0,0 #7f0a1530 app:id/name}
+                    android.widget.ImageView{79011ee V.ED.... ... 0,0-0,0 #7f0a1deb app:id/name}
+                    android.widget.ImageView{9e2568f V.ED.... ... 0,0-0,0 #7f0a2621 app:id/name}
+                    android.widget.ImageView{d589d1c V.ED.... ... 0,0-0,0 #7f0a1de9 app:id/name}
+                  com.tencent.mobileqq.activity.SettingMeRelativeLayout{e419d25 G.E..... ... 0,0-0,0}
+                    android.widget.RelativeLayout{f6f5efa VFE...C. ... 0,0-0,0 #7f0a0919 app:id/head_layout}
+                      com.tencent.mobileqq.redtouch.RedTouch{b7ccab V.E..... ... 0,0-0,0 #2}
+                        android.widget.RelativeLayout{5e06f08 VFE...C. ... 0,0-0,0 #7f0a25ed app:id/name}
+                          android.widget.TextView{a93e6a1 G.ED.... ... 0,0-0,0 #7f0a25ee app:id/name}
+                          android.widget.ImageView{2c470c6 G.ED.... ... 0,0-0,0 #7f0a25ef app:id/name}
+                          android.widget.TextView{7248887 V.ED.... ... 0,0-0,0 #7f0a25f0 app:id/richstatus_txt}
+                          android.widget.ImageView{b9173b4 G.ED.... ... 0,0-0,0 #7f0a25f1 app:id/name}
+                        android.widget.LinearLayout{f674bdd G.E..... ... 0,0-0,0 #64}
+                      android.widget.RelativeLayout{206d352 VFE...C. ... 0,0-0,0 #7f0a25f2 app:id/name}
+                        com.tencent.mobileqq.vas.avatar.AvatarLayout{4b72623 V.E..... ... 0,0-0,0 #7f0a0519 app:id/head}
+                          com.tencent.mobileqq.avatar.dynamicavatar.DynamicAvatarView{1ac1720 V.ED.... ... 0,0-0,0 #7f0a21e9 app:id/name}
+                        com.tencent.mobileqq.redtouch.RedTouch{811c8d9 V.E..... ... 0,0-0,0 #1}
+                          android.widget.ImageView{b9ad29e V.ED.... ... 0,0-0,0 #7f0a25f3 app:id/name}
+                          android.widget.LinearLayout{14c017f G.E..... ... 0,0-0,0 #64}
+                        android.widget.TextView{d0b854c V.ED.... ... 0,0-0,0 #7f0a0473 app:id/nickname}
+                        android.widget.TextView{54d1995 V.ED.... ... 0,0-0,0 #7f0a25f4 app:id/name}
+                        com.tencent.image.URLImageView{ddd7aaa G.ED.... ... 0,0-0,0 #7f0a051a app:id/name}
+                    android.widget.FrameLayout{c29369b V.E..... ... 0,0-0,0 #7f0a25f5 app:id/name}
+                      android.widget.ImageView{311aa38 VFED..C. ... 0,0-0,0 #7f0a25f6 app:id/name}
+                    android.widget.LinearLayout{fb2ba11 GFE...C. ... 0,0-0,0 #7f0a25f7 app:id/name}
+                      com.tencent.mobileqq.redtouch.RedTouch{df09776 V.E..... ... 0,0-0,0}
+                        android.widget.RelativeLayout{8daa177 V.E..... ... 0,0-0,0 #7f0a25f8 app:id/name}
+                          com.tencent.image.URLImageView{b5331e4 V.ED.... ... 0,0-0,0 #7f0a25f9 app:id/name}
+                        android.widget.LinearLayout{5f7e64d G.E..... ... 0,0-0,0 #64}
+                      android.widget.TextView{f46b502 V.ED.... ... 0,0-0,0 #7f0a25fa app:id/name}
+                    com.tencent.mobileqq.widget.BounceScrollView{dcdde13 VFED.V.. ... 0,0-0,0 #7f0a25fb app:id/name}
+                      android.widget.LinearLayout{38850 V.E..... ... 0,0-0,0 #7f0a25fc app:id/midcontent_list}
+                        android.widget.LinearLayout{2e99a49 VFE...C. ... 0,0-0,0 #7f0a25fd app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{7ef1f4e V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{ae486f V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{920d97c G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{7289205 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{da1e25a G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{c80fc8b I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{e601168 VFE...C. ... 0,0-0,0 #7f0a25fe app:id/mypocket}
+                          com.tencent.mobileqq.redtouch.RedTouch{2a54981 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{78bca26 V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{d80d667 G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{bd8dc14 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{9dbfcbd G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{da62b2 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{eba7203 GFE...C. ... 0,0-0,0 #7f0a25ff app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{571a580 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{2d0a7b9 V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{807f7fe G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{5682b5f V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.LinearLayout{50b99ac V.E..... ... 0,0-0,0}
+                            android.widget.TextView{5cb0675 G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                            android.widget.ImageView{6e7960a G.ED.... ... 0,0-0,0 #7f0a2626 app:id/name}
+                          android.widget.ImageView{60e1e7b I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{f6ea498 VFE...C. ... 0,0-0,0 #7f0a2600 app:id/myDressup}
+                          com.tencent.mobileqq.redtouch.RedTouch{dd294f1 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{f7108d6 V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{f562757 G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{bf57244 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{4ea8f2d G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{94cdc62 G.ED.... ... 0,0-0,0 #7f0a2624 app:id/name}
+                          com.tencent.image.URLImageView{6abe1f3 G.ED.... ... 0,0-0,0 #7f0a2625 app:id/name}
+                          android.widget.ImageView{af96eb0 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{80df129 VFE...C. ... 0,0-0,0 #7f0a2601 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{c205cae V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{298aa4f V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{6fec5dc G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{eeb76e5 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{29995ba G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{edf9c6b I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{ca063c8 VFE...C. ... 0,0-0,0 #7f0a2602 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{3619c61 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{23b5386 V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{6599447 G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{53bf474 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{4ba9d9d G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{3e92212 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{e912de3 VFE...C. ... 0,0-0,0 #7f0a2603 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{5de3e0 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{2a87699 V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{9334d5e G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{11ec53f V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{7ed5e0c G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{c00e355 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{a62e16a GFE...C. ... 0,0-0,0 #7f0a2604 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{ec4765b V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{b184ef8 V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{d395fd1 G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{945aa36 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{84a1d37 G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{bff62a4 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{aa3280d GFE...C. ... 0,0-0,0 #7f0a2605 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{4ba33c2 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{91955d3 V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{c220510 G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{2673809 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{8fbca0e G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{f997c2f I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{38a623c GFE...C. ... 0,0-0,0 #7f0a2606 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{2424bc5 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{8ae791a V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{f4bac4b G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{eb96628 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{d00df41 G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{aab0ce6 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{8a6c227 GFE...C. ... 0,0-0,0 #7f0a2607 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{f52bcd4 V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{bbb2e7d V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{88b1172 G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{2b359c3 V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{b88d240 G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{6d13579 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                        android.widget.LinearLayout{9f4d2be VFE...C. ... 0,0-0,0 #7f0a2608 app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{267cf1f V.E..... ... 0,0-0,0}
+                            android.widget.ImageView{848d26c V.ED.... ... 0,0-0,0 #7f0a2622 app:id/name}
+                            android.widget.LinearLayout{2a6b035 G.E..... ... 0,0-0,0 #64}
+                          com.tencent.mobileqq.redtouch.RedTouchTextView{8a75cca V.ED.... ... 0,0-0,0 #7f0a2623 app:id/item_txt}
+                          android.widget.TextView{bc43e3b G.ED.... ... 0,0-0,0 #7f0a1b24 app:id/name}
+                          android.widget.ImageView{a26a958 I.ED.... ... 0,0-0,0 #7f0a1dc6 app:id/name}
+                    android.widget.LinearLayout{c1f1ab1 V.E..... ... 0,0-0,0 #7f0a0516 app:id/name}
+                      android.widget.LinearLayout{9467b96 VFE...C. ... 0,0-0,0 #7f0a2609 app:id/settings}
+                        android.widget.RelativeLayout{8ae8317 V.E..... ... 0,0-0,0}
+                          android.widget.ImageView{9090304 V.ED.... ... 0,0-0,0 #7f0a260a app:id/name}
+                          com.tencent.mobileqq.redtouch.RedTouch{d9b0ed V.E..... ... 0,0-0,0 #3}
+                            com.tencent.mobileqq.widget.RedDotTextView{4e6bb22 V.ED.... ... 0,0-0,0 #7f0a260b app:id/name}
+                            android.widget.LinearLayout{18e39b3 G.E..... ... 0,0-0,0 #64}
+                        android.widget.TextView{2954b70 V.ED.... ... 0,0-0,0 #7f0a260c app:id/name}
+                      android.widget.LinearLayout{f2d6ee9 VFE...C. ... 0,0-0,0 #7f0a260d app:id/name}
+                        android.widget.ImageView{f59676e V.ED.... ... 0,0-0,0 #7f0a260e app:id/name}
+                        android.widget.TextView{3a8be0f V.ED.... ... 0,0-0,0 #7f0a260f app:id/nightmode_txt}
+                      android.widget.LinearLayout{75bae9c VFE...C. ... 0,0-0,0 #7f0a2610 app:id/name}
+                        android.widget.RelativeLayout{9e510a5 V.E..... ... 0,0-0,0}
+                          android.widget.TextView{6388c7a G.ED.... ... 0,0-0,0 #7f0a2611 app:id/name}
+                          android.widget.TextView{13d2c2b V.ED.... ... 0,0-0,0 #7f0a2612 app:id/name}
+                          android.widget.TextView{ec31888 V.ED.... ... 0,0-0,0 #7f0a2613 app:id/name}
+                        android.widget.TextView{bbb1221 V.ED.... ... 0,0-0,0 #7f0a2614 app:id/name}
+                      android.widget.LinearLayout{4b2f646 GFE...C. ... 0,0-0,0 #7f0a2615 app:id/name}
+                        android.widget.ImageView{7606007 V.ED.... ... 0,0-0,0 #7f0a2616 app:id/name}
+                        android.widget.TextView{db53534 V.ED.... ... 0,0-0,0 #7f0a2617 app:id/name}
+                    com.tencent.mobileqq.apollo.view.FrameGifView{695af5d VFED..C. ... 0,0-0,0 #7f0a2618 app:id/name}
+                    com.tencent.mobileqq.apollo.store.ApolloBoxEnterView{81830d2 VFED..C. ... 0,0-0,0 #7f0a2619 app:id/name}
+                    android.widget.RelativeLayout{598f5a3 G.E..... ... 0,0-0,0 #7f0a261a app:id/name}
+                      android.widget.LinearLayout{c0a70a0 V.E..... ... 0,0-0,0 #7f0a261b app:id/name}
+                        android.widget.TextView{a82e459 GFED..C. ... 0,0-0,0 #7f0a261c app:id/name}
+                        com.tencent.mobileqq.dinifly.DiniFlyAnimationView{124881e VFED..C. ... 0,0-0,0 #7f0a261d app:id/name}
+                      android.widget.LinearLayout{33b48ff V.E..... ... 0,0-0,0 #7f0a261e app:id/name}
+                        android.widget.TextView{4b5f6cc VFED..C. ... 0,0-0,0 #7f0a261f app:id/name}
+                  com.tencent.mobileqq.activity.recent.cur.DragFrameLayout{746d15 V.ED.... ... 0,0-1080,2040 #7f0a0ca9 app:id/name}
+                    android.widget.FrameLayout{e0d082a V.E..... ... 0,0-1080,2040 #1020011 android:id/tabcontent}
+                      android.widget.RelativeLayout{e85761b V.E..... ... 0,0-1080,1878 #7f0a0434 app:id/root}
+                        android.widget.FrameLayout{cb1b3b8 V.E..... ... 0,0-1080,1878 #7f0a08ba app:id/name}
+                        android.widget.RelativeLayout{4bbc591 V.E..... ... 0,0-1080,222 #7f0a06cb app:id/name}
+                          com.tencent.widget.immersive.ImmersiveTitleBar2{94b7cf6 V.ED.... ... 0,0-1080,72 #7f0a0667 app:id/name}
+                          android.widget.RelativeLayout{17b58f7 V.E..... ... 0,72-1080,222 #7f0a08bb app:id/name}
+                            com.tencent.widget.SegmentedControlView{caa5364 G.E..... ... 0,0-0,0 #7f0a08bc app:id/name}
+                              android.widget.RadioButton{d4629cd VFED..C. ... 0,0-0,0 #7f0a08bd app:id/name}
+                            android.widget.TextView{92a7282 V.ED.... ... 486,38-594,111 #7f0a0669 app:id/ivTitleName}
+                            android.widget.ImageView{8828d93 VFED..C. ... 933,15-1080,135 #7f0a08be app:id/name}
+                            android.widget.ImageView{96b41d0 G.ED.... ... 0,0-0,0 #7f0a08bf app:id/name}
+                            android.widget.RelativeLayout{79895c9 V.E..... ... -75,-150-1155,300 #7f0a08c0 app:id/name}
+                              android.widget.ImageView{c1134ce G.ED.... ... 0,0-0,0 #7f0a02cc app:id/name}
+                            android.widget.ImageView{6be6fef G.ED.... ... 408,46-465,103 #7f0a0a4d app:id/name}
+                        android.widget.RelativeLayout{70aaafc V.E..... ... 0,222-1080,1878 #7f0a08c1 app:id/name}
+                          com.tencent.widget.ARMapHongBaoListView{a8bc585 VFED.VC. F.. 0,0-1080,1656 #7f0a08c2 app:id/recent_chat_list}
+                            android.widget.LinearLayout{d8fcfda VFE...CL ... 0,-18-1080,180}
+                              android.widget.RelativeLayout{42c1c0b V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{2d57ae8 V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{7c83501 G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{2b0fa6 G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{17e6de7 V.E..... ... 222,32-1080,166}
+                                  com.tencent.widget.SingleLineTextView{ffb5d94 V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{902203d G.ED.... ... 766,74-822,132 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{7e88032 V.ED.... ... 0,74-452,134 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{dba0183 VFED..C. ... 1080,0-1380,198 #7f0a20e2 app:id/name}
+                              com.tencent.widget.SimpleTextView{2fabf00 VFED..C. ... 1380,0-1680,198 #7f0a20e4 app:id/name}
+                              com.tencent.widget.SimpleTextView{4f58339 VFED..C. ... 1680,0-1932,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{19a6d7e VFE...CL ... 0,180-1080,378}
+                              android.widget.RelativeLayout{99132df V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{7cccb2c V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{82219f5 G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{2ebe38a G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{4801dfb V.E..... ... 222,33-1080,165}
+                                  com.tencent.widget.SingleLineTextView{ed16e18 V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{d476071 V.ED.... ... 766,74-822,132 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{f2cae56 V.ED.... ... 0,74-730,131 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{fa89ed7 VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{c7b53c4 VFED..C. ... 1332,0-1584,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{1a092ad VFE...CL ... 0,378-1080,576}
+                              android.widget.RelativeLayout{cdd59e2 V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{26e5173 V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{7bbe830 G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{e0aca9 G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{7fb322e V.E..... ... 222,33-1080,164}
+                                  com.tencent.widget.SingleLineTextView{cd291cf V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{32f575c V.ED.... ... 795,74-822,118 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{4ee6a65 V.ED.... ... 0,74-759,131 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{d0c433a VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{3907beb VFED..C. ... 1332,0-1584,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{d088d48 VFE...CL ... 0,576-1080,774}
+                              android.widget.RelativeLayout{56047e1 V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{8eb5906 V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{1f8ebc7 G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{1bd35f4 G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{2b8811d V.E..... ... 222,33-1080,165}
+                                  com.tencent.widget.SingleLineTextView{953ff92 V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{d8e7d63 V.ED.... ... 766,74-822,132 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{d71bd60 V.ED.... ... 0,74-730,131 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{9611219 VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{a2e82de VFED..C. ... 1332,0-1584,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{7618cbf VFE...CL ... 0,774-1080,972}
+                              android.widget.RelativeLayout{8254f8c V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{867b6d5 V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{b9beeea G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{72c35db G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{89dd878 V.E..... ... 222,33-1080,165}
+                                  com.tencent.widget.SingleLineTextView{7f9eb51 V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{cc20fb6 V.ED.... ... 766,74-822,132 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{c2e54b7 V.ED.... ... 0,74-730,131 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{a140424 VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{ba0eb8d VFED..C. ... 1332,0-1584,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{7577142 VFE...CL ... 0,972-1080,1170}
+                              android.widget.RelativeLayout{fc98553 V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{9f3e90 V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{c3db389 G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{7ef5f8e G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{5dd23af V.E..... ... 222,32-1080,166}
+                                  com.tencent.widget.SingleLineTextView{861b3bc V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{5c4ff45 G.ED.... ... 0,0-0,0 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{f05e69a V.ED.... ... 0,74-446,134 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{6e24bcb VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{b744fa8 VFED..C. ... 1332,0-1632,198 #7f0a20e4 app:id/name}
+                              com.tencent.widget.SimpleTextView{4bb4ac1 VFED..C. ... 1632,0-1884,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{6cbd266 VFE...CL ... 0,1170-1080,1368}
+                              android.widget.RelativeLayout{fc7d9a7 V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{a92be54 V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{f70d1fd G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{9b2aef2 G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{38e6943 V.E..... ... 222,33-1080,164}
+                                  com.tencent.widget.SingleLineTextView{4876bc0 V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{6fd90f9 G.ED.... ... 766,74-822,130 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{5b8c83e V.ED.... ... 0,74-786,131 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{aa4569f VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{85783ec VFED..C. ... 1332,0-1584,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{bfd43b5 VFE...CL ... 0,1368-1080,1566}
+                              android.widget.RelativeLayout{8752a4a V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{c01bdbb V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{e2ef2d8 G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{30b6631 G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{fe3a116 V.E..... ... 222,33-1080,164}
+                                  com.tencent.widget.SingleLineTextView{c047a97 V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{30c6484 V.ED.... ... 766,74-822,130 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{4ff346d V.ED.... ... 0,74-730,131 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{bf0b8a2 VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{d0c2933 VFED..C. ... 1332,0-1584,198 #7f0a20df app:id/name}
+                            android.widget.LinearLayout{32d44f0 VFE...CL ... 0,1566-1080,1764}
+                              android.widget.RelativeLayout{6e7aa69 V.E..... ... 0,0-1080,198 #7f0a05a1 app:id/relativeItem}
+                                com.tencent.widget.RecentDynamicAvatarView{cc5bcee V.ED.... ... 36,24-186,174 #7f0a03a5 app:id/icon}
+                                android.widget.ImageView{dd6258f G.ED.... ... 0,0-0,0 #7f0a34d8 app:id/name}
+                                android.widget.ImageView{f39c01c G.ED.... ... 0,0-0,0 #7f0a34d9 app:id/name}
+                                android.widget.RelativeLayout{5c78425 V.E..... ... 222,33-1080,165}
+                                  com.tencent.widget.SingleLineTextView{9d4b9fa V.ED.... ... 0,0-858,68 #7f0a0666 app:id/title}
+                                  com.tencent.mobileqq.activity.recent.cur.DragTextView{1998bab V.ED.... ... 766,74-822,132 #7f0a05a8 app:id/unreadmsg}
+                                  com.tencent.widget.SingleLineTextView{830c208 V.ED.... ... 0,74-730,131 #7f0a0f80 app:id/name}
+                              com.tencent.widget.SimpleTextView{2113da1 VFED..C. ... 1080,0-1332,198 #7f0a20e1 app:id/name}
+                              com.tencent.widget.SimpleTextView{da47bc6 VFED..C. ... 1332,0-1584,198 #7f0a20df app:id/name}
+                          android.widget.ImageView{de33787 G.ED.... ... 0,0-0,0 #7f0a08c3 app:id/name}
+                          android.view.ViewStub{e13f6b4 G.E..... ... 0,0-0,0 #7f0a06ce app:id/name}
+                          android.view.View{6e312dd V.ED.... ... 0,0-1080,6}
+                          android.view.ViewStub{25c8e52 G.E..... ... 0,0-0,0 #7f0a08c4 app:id/name}
+                          android.widget.RelativeLayout{a31c523 V.E..... ... 1077,1653-1080,1656 #7f0a08c5 app:id/name}
+                        com.tencent.mobileqq.portal.BreathEffectView{d53ca20 G.ED.... ... 0,0-0,0 #7f0a08c6 app:id/name}
+                    com.tencent.mobileqq.widget.QQTabWidget{902ffd9 V.E..... ... 0,1878-1080,2040 #1020013 android:id/tabs}
+                      android.widget.RelativeLayout{b113d9e VFE...C. .S. 0,0-360,162 #10}
+                        android.view.View{d51907f I.ED.... .S. 178,0-181,162 #7f0a3611 app:id/name}
+                        android.widget.TextView{6fb684c V.ED.... .S. 150,103-210,144 #7f0a3612 app:id/name}
+                        com.tencent.mobileqq.widget.TabDragAnimationView{99ac095 V.ED.... .S. 0,0-360,162 #7f0a0cad app:id/name}
+                        com.tencent.mobileqq.activity.recent.cur.DragTextView{5cf95aa V.ED.... .S. 202,9-258,65 #7f0a0cae app:id/name}
+                      com.tencent.mobileqq.redtouch.RedTouchTab{478b59b VFE...C. ... 360,0-720,162 #12}
+                        android.widget.RelativeLayout{f9cbd38 VFE...C. ... 0,0-360,162}
+                          android.view.View{8b3d111 I.ED.... ... 178,0-181,162 #7f0a3611 app:id/name}
+                          android.widget.TextView{2696276 V.ED.... ... 135,103-225,144 #7f0a3612 app:id/name}
+                          com.tencent.mobileqq.widget.TabDragAnimationView{231077 V.ED.... ... 0,0-360,162 #7f0a0cad app:id/name}
+                          com.tencent.mobileqq.activity.recent.cur.DragTextView{fc74e4 V.ED.... ... 196,9-196,48 #7f0a0cae app:id/name}
+                        android.widget.LinearLayout{3736d4d G.E..... ... 0,0-0,0 #64}
+                      com.tencent.mobileqq.redtouch.RedTouchTab{a013002 VFE...C. ... 720,0-1080,162 #13}
+                        android.widget.RelativeLayout{2ae3d13 VFE...C. ... 0,0-360,162}
+                          android.view.View{a7dfb50 I.ED.... ... 178,0-181,162 #7f0a3611 app:id/name}
+                          android.widget.TextView{a169149 V.ED.... ... 150,103-210,144 #7f0a3612 app:id/name}
+                          com.tencent.mobileqq.widget.TabDragAnimationView{3564a4e V.ED.... ... 0,0-360,162 #7f0a0cad app:id/name}
+                          com.tencent.mobileqq.activity.recent.cur.DragTextView{cb5976f V.ED.... ... 196,9-196,48 #7f0a0cae app:id/name}
+                        android.widget.LinearLayout{c4f7c7c G.E..... ... 0,0-0,0 #64}
+                    android.widget.RelativeLayout{9adf905 V.E..... ... 0,72-180,222 #7f0a0caa app:id/name}
+                      com.tencent.mobileqq.redtouch.RedTouch{fd0bd5a V.E..... ... 36,19-147,130 #4}
+                        android.widget.ImageView{32e3b8b V.ED.... ... 0,0-111,111 #7f0a20d9 app:id/conversation_head}
+                        android.widget.LinearLayout{955e468 G.E..... ... 0,0-0,0 #64}
+                      android.view.View{59a2081 VFED..CL ... 0,0-180,150 #7f0a20da app:id/name}
+                      android.widget.TextView{d4d5526 V.ED.... ... 159,21-159,60 #7f0a20db app:id/name}
+                    android.widget.ImageView{b430567 G.ED.... ... 0,0-0,0 #7f0a02cd app:id/name}
+                    android.view.View{bd8df14 G.ED.... ... 0,0-0,0}
+                  android.view.View{cc743bd GFED..C. ... 0,0-0,0}
+            android.support.v4.app.NoSaveStateFrameLayout{de95fd8 G.E..... ... 0,0-0,0}
+              com.tencent.mobileqq.activity.fling.TopGestureLayout{8a99db2 I.E..... ... 0,0-0,0}
+                com.tencent.widget.FitSystemWindowsRelativeLayout{7f09103 V.E..... ... 0,0-0,0 #7f0a06d9 app:id/name}
+                  com.tencent.widget.XPanelContainer{8eed880 V.E..... ... 0,0-0,0 #7f0a0434 app:id/root}
+                    android.widget.RelativeLayout{6a95eb9 V.E..... ... 0,0-0,0 #7f0a06da app:id/name}
+                      com.tencent.mobileqq.activity.aio.panel.PanelIconLinearLayout{d0fe2fe V.E..... ... 0,0-0,0 #7f0a06db app:id/name}
+                      com.tencent.mobileqq.activity.aio.InputLinearLayout{5613a5f VFE..... ... 0,0-0,0 #7f0a06dc app:id/inputBar}
+                        android.view.View{ea8fcac V.ED.... ... 0,0-0,0 #7f0a06dd app:id/name}
+                        android.widget.LinearLayout{3f82d75 G.E..... ... 0,0-0,0 #7f0a06de app:id/name}
+                          android.widget.ImageView{c03310a V.ED.... ... 0,0-0,0 #7f0a0065 app:id/name}
+                          android.widget.ImageButton{e091d7b VFED..C. ... 0,0-0,0 #7f0a092c app:id/emo_btn}
+                          android.widget.ImageButton{8ff3798 VFED..C. ... 0,0-0,0 #7f0a0f2d app:id/plus_btn}
+                          android.widget.ImageView{f2b2bf1 G.ED.... ... 0,0-0,0 #7f0a0f2e app:id/audio_btn}
+                        com.tencent.widget.XEditTextEx{a2b53d6 VFED..CL ... 0,0-0,0 #7f0a06df app:id/input}
+                        android.widget.LinearLayout{5821657 V.E..... ... 0,0-0,0 #7f0a06e0 app:id/name}
+                          com.tencent.widget.PatchedButton{97c3544 VFED..CL ... 0,0-0,0 #7f0a06e1 app:id/fun_btn}
+                      android.widget.LinearLayout{8b5962d G.E..... ... 0,0-0,0 #7f0a06e2 app:id/name}
+                        android.widget.ImageButton{ce0d762 VFED..C. ... 0,0-0,0 #7f0a06e3 app:id/name}
+                      android.widget.LinearLayout{527c0f3 G.E..... ... 0,0-0,0 #7f0a06e4 app:id/name}
+                        android.widget.TextView{da961b0 V.ED.... ... 0,0-0,0 #7f0a06e5 app:id/name}
+                        android.view.View{b026829 V.ED.... ... 0,0-0,0}
+                        android.widget.TextView{47907ae V.ED.... ... 0,0-0,0 #7f0a06e6 app:id/name}
+                      com.tencent.mobileqq.bubble.ChatXListView{673794f VFED.VCL ... 0,0-0,0 #7f0a06e7 app:id/listView1}
+                      com.tencent.mobileqq.activity.aio.anim.AIOAnimationConatiner{3ae8dc V.E..... ... 0,0-0,0 #7f0a04f6 app:id/name}
+                      android.widget.LinearLayout{2305de5 V.E..... ... 0,0-0,0 #7f0a06e8 app:id/name}
+                        android.widget.RelativeLayout{f51f0ba G.E..... ... 0,0-0,0 #7f0a06e9 app:id/name}
+                        android.widget.RelativeLayout{7185b6b V.E..... ... 0,0-0,0 #7f0a06ea app:id/name}
+                      android.widget.FrameLayout{fbb6c8 V.E..... ... 0,0-0,0 #7f0a06eb app:id/name}
+                      android.view.View{38df361 VFED..C. ... 0,0-0,0 #7f0a0108 app:id/name}
+                      android.view.View{19e5e86 VFED..C. ... 0,0-0,0 #7f0a0109 app:id/name}
+                  com.tencent.mobileqq.widget.navbar.NavBarAIO{2df4347 VFE...C. ... 0,0-0,0 #7f0a05da app:id/rlCommenTitle}
+                    android.widget.ImageView{f797774 G.ED.... ... 0,0-0,0 #7f0a08d7 app:id/name}
+                    android.widget.LinearLayout{d5649d V.E..... ... 0,0-0,0 #7f0a0668 app:id/name}
+                      com.tencent.mobileqq.activity.aio.RightLinearLayout{df1dd12 V.E..... ... 0,0-0,0}
+                        android.widget.ImageView{f42cce3 G.ED.... ... 0,0-0,0 #7f0a08b8 app:id/name}
+                        android.widget.TextView{47096e0 G.ED.... ... 0,0-0,0 #7f0a08d8 app:id/name}
+                        android.widget.TextView{328ad99 V.ED.... ... 0,0-0,0 #7f0a0666 app:id/title}
+                      android.widget.LinearLayout{a8cb85e V.E..... ... 0,0-0,0}
+                        android.widget.ImageView{4cb543f G.ED.... ... 0,0-0,0 #7f0a08d9 app:id/name}
+                        android.widget.TextView{5f8410c V.ED.... ... 0,0-0,0 #7f0a08da app:id/title_sub}
+                    android.widget.TextView{9cd8a55 VFED..C. ... 0,0-0,0 #7f0a05db app:id/ivTitleBtnLeft}
+                    android.widget.LinearLayout{f67fc6a VFE...C. ... 0,0-0,0 #7f0a08db app:id/name}
+                      android.widget.ImageView{22af55b VFED..C. ... 0,0-0,0 #7f0a08d5 app:id/name}
+                      android.widget.TextView{26e61f8 IFED..C. ... 0,0-0,0 #7f0a08d6 app:id/name}
+                    android.widget.RelativeLayout{8a976d1 V.E..... ... 0,0-0,0 #7f0a05dc app:id/name}
+                      android.widget.RelativeLayout{9017536 V.E..... ... 0,0-0,0 #7f0a08dc app:id/name}
+                        android.widget.TextView{5198c37 G.ED.... ... 0,0-0,0 #7f0a08dd app:id/name}
+                        android.widget.ImageView{e23a5a4 G.ED.... ... 0,0-0,0 #7f0a08de app:id/ivTitleBtnRightCall}
+                        android.widget.ImageView{27daf0d G.ED.... ... 0,0-0,0 #7f0a08df app:id/name}
+                      android.widget.RelativeLayout{be7aec2 V.E..... ... 0,0-0,0 #7f0a07f3 app:id/name}
+                        android.widget.TextView{4f0b4d3 G.ED.... ... 0,0-0,0 #7f0a08e0 app:id/name}
+                        com.tencent.widget.FadeIconImageView{fc77810 VFED..C. ... 0,0-0,0 #7f0a06c8 app:id/ivTitleBtnRightImage}
+                        android.widget.ImageView{ae32f09 G.ED.... ... 0,0-0,0 #7f0a08e1 app:id/name}
+                  android.view.ViewStub{505f50e G.E..... ... 0,0-0,0 #7f0a06ec app:id/name}

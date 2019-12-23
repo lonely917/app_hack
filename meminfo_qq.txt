@@ -1,0 +1,69 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 121638305 Realtime: 312030921
+
+** MEMINFO in pid 24735 [com.tencent.mobileqq] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap    63172    62964        0       47    79488    65368    14119
+  Dalvik Heap    18305    18216        0       41    23546    17660     5886
+ Dalvik Other     4089     4084        0        0                           
+        Stack       36       36        0        0                           
+       Ashmem        2        0        0        0                           
+    Other dev      148        0      148        0                           
+     .so mmap    11075     1236     5500       61                           
+    .jar mmap        0        0        0        0                           
+    .apk mmap     2901        0     1564        0                           
+    .ttf mmap      677        0      256        0                           
+    .dex mmap    84569       28    77040        0                           
+    .oat mmap     1793        0       92        0                           
+    .art mmap     4330     2156      704        8                           
+   Other mmap     1948      408     1372        0                           
+    GL mtrack     8216     8216        0        0                           
+      Unknown     3309     3272        0        4                           
+        TOTAL   204731   100616    86676      161   103034    83028    20005
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    21076
+         Native Heap:    62964
+                Code:    85716
+               Stack:       36
+            Graphics:     8216
+       Private Other:     9284
+              System:    17439
+ 
+               TOTAL:   204731       TOTAL SWAP PSS:      161
+ 
+ Objects
+               Views:     1062         ViewRootImpl:        1
+         AppContexts:        6           Activities:        1
+              Assets:        7        AssetManagers:        0
+       Local Binders:       82        Proxy Binders:       53
+       Parcel memory:       44         Parcel count:      177
+    Death Recipients:        8      OpenSSL Sockets:        3
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:     6334
+  PAGECACHE_OVERFLOW:     2409          MALLOC_SIZE:      117
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4    37512            109   4046/634/150  /data/user/0/com.tencent.mobileqq/databases/474427124.db
+         4       24             70         6/27/5  /data/user/0/com.tencent.mobileqq/databases/public_account_database_474427124.db
+         4      144            109       20/33/11  /data/user/0/com.tencent.mobileqq/databases/readinjoy_message_node_474427124.db
+         4       24             32         2/27/3  /data/user/0/com.tencent.mobileqq/databases/player_odk_com.tencent.mobileqq_exception.db
+         4      196            109      139/38/16  /data/user/0/com.tencent.mobileqq/databases/bugly_db_
+         4      220             61        15/48/6  /data/user/0/com.tencent.mobileqq/databases/tmassistant_sdk_v2.db
+         4       24             35         2/25/3  /data/user/0/com.tencent.mobileqq/databases/tk_file
+         4       28             33         1/26/2  /data/user/0/com.tencent.mobileqq/databases/halley_schedule_100__HttpSchedulerHandler.db
+         4       32             69         4/27/5  /data/user/0/com.tencent.mobileqq/databases/passwd_red_bag_474427124.db
+         4       36             45         4/29/5  /data/user/0/com.tencent.mobileqq/databases/tencent_odk_player_com.tencent.mobileqq_9D26C6446FD7BB8E41D99B6262B17DEF.db
+         4       32             79         4/27/5  /data/user/0/com.tencent.mobileqq/databases/sdk_db
+         4      124            109      889/50/16  /data/user/0/com.tencent.mobileqq/databases/config_db
+         4      692            109        16/29/7  /data/user/0/com.tencent.mobileqq/databases/qqstory_474427124.db
+         4       28             41         5/28/4  /data/user/0/com.tencent.mobileqq/databases/halley_schedule_100__HttpSchedulerClient.db
+         4       12             28         3/24/2  /data/user/0/com.tencent.mobileqq/databases/name_file
+         4      652             85        42/47/7  /data/user/0/com.tencent.mobileqq/databases/beacon_db
